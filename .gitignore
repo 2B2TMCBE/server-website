@@ -1,2 +1,5 @@
 # Private rcon and broadcast source codes
 /html/rcon/
+
+# bash scripts
+.sh

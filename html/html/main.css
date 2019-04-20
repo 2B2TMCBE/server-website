@@ -1,0 +1,180 @@
+html, body {
+	font-family: sans-serif;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+* {
+	z-index: 2;
+}
+
+/*Stackoverflow lol with position ajustments*/
+.background-image {
+	background-image: url("spawn.jpg");
+	background-size: cover;
+	display: block;
+	position: fixed;
+	left: -5px;
+	right: 0;
+	top: -5px;
+	height: calc(100% + 10px);
+	width: calc(100% + 10px);
+	z-index: 1;
+
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+}
+
+h1 {
+	font-size: 48px;
+}
+
+p {
+	font: 'Courier New';
+}
+
+h2 {
+	text-align: center;
+	font-size: 2.6rem;
+}
+
+video {
+	background-color: #000000;
+	border: 2px solid black;
+}
+
+.container {
+	display: flex;
+}
+
+.main {
+	padding-left: 30px;
+	padding-right: 30px;
+	min-width: 75%;
+}
+
+.nav {
+	max-width: 23.5%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.flex-parent {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin:10px;
+    display:table;
+    padding: 2px 16px;
+    background-color: rgba(255,255,255,0.45);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card.pill { /* Do not put the text in a paragraph for the pill effect to work!*/
+    padding: 3px 6px;
+    display: inline;
+    margin: 2px;
+}
+
+.card.button { /* Let's just have the button be inherited to make it easier...*/
+	background-color: #fcfcfc;
+	text-decoration: none;
+	padding: 12px 12px;
+	margin: 10px;
+}
+
+.button:link, .button:visited {
+	color: #2c8407;
+	transition:0.2s;
+}
+
+.button:hover, .button:active {
+	color: #297790;
+}
+
+.box {
+	padding: 2px 16px;
+}
+
+.box.right-divided {
+	border-right: 1px solid #333333;
+}
+
+.card#ip-address {
+	background-color: rgba(7,5,255,0.45);
+}
+
+.card#port {
+	background-color: rgba(0,128,0,0.45);
+}
+
+.card#motd {
+	background-color: rgba(255,165,0,0.45);
+}
+
+.card#vanilla {
+	background-color: rgba(125,138,250,0.45);
+}
+
+.connection-info {
+	color: #232323;
+}
+
+.card h3 {
+	text-align: center;
+}
+
+.discord {
+	min-width: 300px;
+    min-height: 150px;
+    width: 48.2%;
+    height: 49.1%;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    margin-left: 25%; /*Centering*/
+}
+
+@media only screen and (max-width: 582px) {
+	.discord {
+		margin-left: 0;
+	}
+}
+
+/*Icon*/
+
+img.icon {
+	width:38px;
+	height:32px;
+	padding-left:6px;
+	padding-bottom:0px;
+	padding-right:9px;
+}
+
+@media only screen and (max-width: 505px) {
+	.icon {
+		display: none;
+	}
+}
+
