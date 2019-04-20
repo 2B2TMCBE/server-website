@@ -1,5 +1,5 @@
 # Private rcon and broadcast source codes
-/html/rcon/
+html/rcon
 
 # bash scripts
 html/transfer.sh
